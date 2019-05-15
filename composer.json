@@ -1,0 +1,32 @@
+{
+  "name": "apimaster/nerkh",
+  "description": "apimaster nerkh web service",
+  "keywords": [
+    "apimaster",
+    "web service",
+    "rest",
+    "nerkh"
+  ],
+  "type": "library",
+  "require": {
+    "ext-curl": "*",
+    "ext-json": "*",
+    "php": ">=7.0"
+  },
+  "license": "MIT",
+  "minimum-stability": "dev",
+  "authors": [
+    {
+      "name": "MahdiY",
+      "email": "ymd1376@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "APIMaster\\Nerkh\\": "src"
+    },
+    "files": [
+      "src/helpers.php"
+    ]
+  }
+}
