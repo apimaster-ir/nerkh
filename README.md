@@ -1,8 +1,5 @@
 # nerkh
 
-[![stable][ico-version]][link-packagist]
-[![Total Downloads][ico-downloads]][link-downloads]
-
 Nerkh webservice by [apimaster](http://apimaster.ir/product/nerkh)
 
 ## Installation
@@ -16,12 +13,25 @@ $ composer require apimaster/nerkh
 ## Usage
 
 ``` bash
-simple code here
+<?php
+
+include 'vendor/autoload.php';
+
+use APIMaster\Nerkh\Nerkh;
+
+Nerkh::setApiKey('<YOUR_API_KEY');
+
+$usd_sana = Nerkh::single('usd_sana');
+
+print_r($usd_sana);
 ```
+
+Replace `<YOUR_API_KEY>` with your given api key.
 
 ## Documentation
 
-You can see documents in [postman](https://documenter.getpostman.com/view/3509100/RWgja2Ry).
+You can see documents in [postman](https://documenter.getpostman.com/view/3509100/RWgja2Ry). 
+Don't forget to check out endpoint examples.
 
 ## License
 
