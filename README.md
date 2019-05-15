@@ -12,7 +12,7 @@ $ composer require apimaster/nerkh
 
 ## Usage
 
-``` bash
+``` php
 <?php
 
 include 'vendor/autoload.php';
