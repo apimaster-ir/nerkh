@@ -15,7 +15,7 @@ class Nerkh
 	 */
 	static function info()
 	{
-		return self::request('nerkh/v1');
+		return self::request('nerkh/v2');
 	}
 
 	/**
@@ -25,7 +25,7 @@ class Nerkh
 	 */
 	static function list()
 	{
-		return self::request('nerkh/v1/list');
+		return self::request('nerkh/v2/list');
 	}
 
 	/**
@@ -36,7 +36,7 @@ class Nerkh
 	 */
 	static function single(string $slug)
 	{
-		return self::request("nerkh/v1/{$slug}/single");
+		return self::request("nerkh/v2/{$slug}/single");
 	}
 
 	/**
